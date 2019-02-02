@@ -42,9 +42,6 @@ requirejs.config({
   }
 });
 
-require(['modules/home/views/home'], function(home) {
-  var tt = 12;
-  new home({
-    el: $('#learnApp')
-  }).index();
+require(['modules/home/views/home'], function(Home) {
+  new Home();
 });

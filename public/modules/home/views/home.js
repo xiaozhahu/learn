@@ -7,18 +7,14 @@ define([
 ], function($, _, Backbone, Hbs, tpl) {
 
   return Backbone.View.extend({
-    template: tpl({}),
+    el: '#learnApp',
+    template: tpl,
     initialize: function() {
+      this.render();
     },
     render: function() {
-      var tt =12;
+      this.$el.html(this.template({}));
       return this;
-    },
-    index: function () {
-      var kk= 12;
-      // loginAction.dologin({"user_name":"test","password":"11"},function(data){
-      //
-      // });
     }
   });
 });
