@@ -30,7 +30,6 @@ requirejs.config({
    * since it didn't work properly with the RequireJS shim when optimizing
    */
   paths: {
-    router: 'router',
     jquery: 'lib/jquery/jquery.min',
     underscore: 'lib/underscore/underscore.min',
     backbone: 'lib/backbone/backbone.min',

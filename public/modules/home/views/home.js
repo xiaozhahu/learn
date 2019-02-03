@@ -7,7 +7,7 @@ define([
 ], function($, _, Backbone, Hbs, tpl) {
 
   return Backbone.View.extend({
-    el: '#learnApp',
+    el: '#campusFree',
     template: tpl,
     initialize: function() {
       this.render();
